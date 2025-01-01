@@ -4,58 +4,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+DE+Grund&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+      font-family: "Mulish", serif;
+    }
+  </style>
   <title>Document</title>
 </head>
 
-<body class="overflow-x-hidden">
-  <main class=" h-screen w-screen  bg-zinc-800 text-white 
+<body class="overflow-x-hidden text-zinc-200 ">
 
-   ">
-    <nav class=" px-6 py-4 flex items-center justify-between  text-lg ">
-      <div class="logo flex gap-2"> <i class="ri-music-2-line text-3xl font-medium"></i><h1 class="text-2xl">Musical-Vibe</h1></div>
-      <div class="links flex items-center gap-8  ">
-        <a href="#"> Home</a>
-        <a href="#">About the Show</a>
-        <a href="#"> Star Performers</a>
-        <a href="#">Event Schedule</a>
-        <a href="#">Grab Tickets</a>
+  <main class="h-screen w-screen bg-zinc-800 ">
+
+
+    <nav class=" px-6 py-4 flex items-center justify-between bg-zinc-700 text-lg  ">
+      <div class="logo flex gap-2">
+        <i class="ri-music-2-line text-3xl font-semibold hover:border-b-2 border-zinc-400"></i>
+      
+      
+        <h1 class="text-2xl font-medium  hover:border-b-2 border-zinc-400 ">Musical-Vibe</h1>
       </div>
-     
-      <div class="icons flex items-center  gap-5 text-white text-2xl" >
-        <i class=" font-medium ri-facebook-circle-fill"></i>
-        <i class=" font-medium ri-instagram-line"></i>
-        <i class=" font-medium ri-tiktok-fill"></i>
-        <i class=" font-medium ri-youtube-line"></i>
-        <button class=" px-3 py-1 bg-zinc-700 rounded-xl text-lg "> Tickets Counter</button>
+      <div class="links flex items-center gap-8 text-[16px]">
+        <a class="px-2 rounded-lg transition duration-200 ease-in-out hover:text-zinc-200 hover:border-2 hover:border-zinc-400" href="#">Home</a>
+        <a class="px-2 rounded-lg transition duration-200 ease-in-out hover:text-zinc-200 hover:border-2 hover:border-zinc-400" href="#">About the Show</a>
+        <a class="px-2 rounded-lg transition duration-200 ease-in-out hover:text-zinc-200 hover:border-2 hover:border-zinc-400" href="#">Star Performers</a>
+        <a class="px-2 rounded-lg transition duration-200 ease-in-out hover:text-zinc-200 hover:border-2 hover:border-zinc-400" href="#">Event Schedule</a>
+        <a class="px-2 rounded-lg transition duration-200 ease-in-out hover:text-zinc-200 hover:border-2 hover:border-zinc-400" href="#">Grab Tickets</a>
+      </div>
+      
+
+      <div class="icons flex items-center  gap-5 text-white text-2xl">
+
+        <button class=" px-4 py-1 border-2 border-zinc-400 transition duration-200 ease-in-out rounded-xl text-lg hover:bg-zinc-800 "> Tickets Counter</button>
 
       </div>
     </nav>
     <div class="hero px-6 flex items-center gap-4 py-4 ">
-      <div class="left  py-10 w-1/2">
-        <h1 class="text-3xl   mb-4 font-semibold">One Stage, Infinite Memories: Live Concert 2024</h1>
-        <h2 class="text-2xl mb-4 font-medium">Experience the Magic of Live Performances Like Never Before</h2>
+      <div class="left  py-6 w-[55vw]">
+        <h1 class="text-4xl   mb-4 ">One Stage, Infinite Memories: Live Concert 2024</h1>
+        <h2 class="text-2xl mb-4 ">Experience the Magic of Live Performances Like Never Before</h2>
         <p class="mb-6 ">Get ready for an electrifying night filled with music, dance, and unforgettable
           memories. This is more than just a concert—it's an experience that will leave you spellbound.</p>
-        <h2 class="mb-4 text-2xl font-semibold"> What to Expect:   </h2> 
-         <ul  class=" mb-4">
+        <h2 class="mb-4 mt-8  text-3xl "> What to Expect: </h2>
+        <ul class=" mb-4">
           <li class=" mb-2">World-Class Performers: Witness top artists from around the globe.</li>
           <li class=" mb-2">Spectacular Stage Effects: A visual treat with lights, sound, and energy.</li>
           <li class=" mb-2">Unmatched Vibes: Sing along, dance, and feel the rhythm in the air.
           </li>
-         </ul>
-      
-          <h3 class=" font-semibold  text-lg "> Date: 31st December 2024 | Time: Gates open at 6 PM | Venue: Dashera Ground - Bhopal</h3>
-      
+        </ul>
+
+        <h3 class=" text-lg mt-8"> Date: 31st December 2024 <br> Time: Gates open at 6 PM <br> Venue: Dashera
+          Ground - Bhopal</h3>
+
 
       </div>
 
-      <div class="right w-[45vw] px-4 relative">
-        <img class=" object-cover h-[100%] w-[100%] object-bottom" src="music.jpg" alt="">
+      <div class="right  w-[45vw] px-4 relative flex  flex-col gap-4">
+        <img class="object-cover h-[100%] w-[100%] object-bottom rounded-xl " src="music.jpg" alt="">
+        <h2 class=" text-xl text-right">Connect us on Social Media </h2>
+        <div class="icons flex items-center  gap-5 text-white text-3xl   font-medium justify-end">
+         
+          <i class="  rounded-lg hover:text-blue-300 font-medium ri-facebook-circle-fill"></i>
+          <i class="  rounded-lg hover:text-blue-300 font-medium ri-instagram-line"></i>
+          <i class="  rounded-lg hover:text-blue-300 font-medium ri-tiktok-fill"></i>
+          <i class="  rounded-lg hover:text-blue-300 font-medium ri-youtube-line"></i>
+        </div>
       </div>
     </div>
 
